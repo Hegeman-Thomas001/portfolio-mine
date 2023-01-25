@@ -14,7 +14,6 @@ function App() {
       <About />
       <Portfolio />
       <Contact />
-      <h1>APP!</h1>
     </>
   );
 }

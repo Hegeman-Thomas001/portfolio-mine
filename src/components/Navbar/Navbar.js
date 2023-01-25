@@ -1,28 +1,55 @@
+import { useState } from "react";
 //
 const Nav = () => {
+  const [linkActive, setLinkActive] = useState("home");
+
   const menuItems = (
     <>
       <li>
         {" "}
-        <a href="#home" className="hover:bg-neutral hover:text-secondary">
+        <a
+          onClick={() => setLinkActive("home")}
+          href="#home"
+          className={`${
+            linkActive === "home" ? "text-red-700" : ""
+          } hover:bg-neutral hover:text-red-700`}
+        >
           Home
         </a>{" "}
       </li>
       <li>
         {" "}
-        <a href="#about" className="hover:bg-neutral hover:text-secondary">
+        <a
+          onClick={() => setLinkActive("about")}
+          href="#about"
+          className={`${
+            linkActive === "about" ? "text-red-700" : ""
+          } hover:bg-neutral hover:text-red-700`}
+        >
           About
         </a>{" "}
       </li>
       <li>
         {" "}
-        <a href="#portfolio" className="hover:bg-neutral hover:text-secondary">
+        <a
+          onClick={() => setLinkActive("portfolio")}
+          href="#portfolio"
+          className={`${
+            linkActive === "portfolio" ? "text-red-700" : ""
+          } hover:bg-neutral hover:text-red-700`}
+        >
           Portfolio
         </a>{" "}
       </li>
       <li>
         {" "}
-        <a href="#contact" className="hover:bg-neutral hover:text-secondary">
+        <a
+          onClick={() => setLinkActive("contact")}
+          href="#contact"
+          className={`${
+            linkActive === "contact" ? "text-red-700" : ""
+          } hover:bg-neutral hover:text-red-700`}
+        >
           Contact
         </a>{" "}
       </li>
@@ -30,10 +57,10 @@ const Nav = () => {
   );
 
   return (
-    <div className="sticky top-0">
-      <div className="navbar bg-base-100">
-        <div className="navbar-start">
-          <div className="dropdown">
+    <header className="sticky top-0">
+      <nav className="navbar bg-black">
+        <section className="navbar-start">
+          <section className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -52,23 +79,18 @@ const Nav = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-black rounded-box w-52"
             >
               {menuItems}
             </ul>
-          </div>
-          <a
-            href="/"
-            className="btn btn-ghost normal-case text-xl hover:bg-neutral hover:text-secondary"
-          >
-            Thomas
-          </a>
-        </div>
-        <div className="navbar-end hidden lg:flex">
+          </section>
+          <img src="#" alt="me" className="" />
+        </section>
+        <section className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{menuItems}</ul>
-        </div>
-      </div>
-    </div>
+        </section>
+      </nav>
+    </header>
   );
 };
 
