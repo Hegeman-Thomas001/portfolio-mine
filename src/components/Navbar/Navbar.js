@@ -57,7 +57,7 @@ const Nav = () => {
   );
 
   return (
-    <header className="sticky top-0">
+    <header className="sticky top-0 z-10">
       <nav className="navbar bg-black">
         <section className="navbar-start">
           <section className="dropdown">

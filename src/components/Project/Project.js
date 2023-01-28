@@ -11,8 +11,9 @@ const Project = ({ project }) => {
     githubLink,
     liveSiteLink,
   } = project;
+
   return (
-    <section className="card w-96 bg-base-100 shadow-xl project-card">
+    <section className="card h-fit w-96 bg-base-100 shadow-xl project-card">
       <figure>
         <img src={image} alt="Shoes" />
       </figure>
@@ -25,10 +26,10 @@ const Project = ({ project }) => {
         </section>
         <p>{description}</p>
         <section className="card-actions justify-end">
-          <a href={githubLink} className="btn btn-active project-github">
+          <a href={githubLink} className="btn project-github">
             Github
           </a>
-          <a href={liveSiteLink} className="btn btn-active project-site">
+          <a href={liveSiteLink} className="btn project-site">
             Visit Site
           </a>
         </section>
