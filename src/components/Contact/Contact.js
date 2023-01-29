@@ -1,4 +1,4 @@
-// 
+//
 const Contact = () => {
   return (
     <section id="contact" className="bg-red-800  h-screen">
@@ -7,4 +7,4 @@ const Contact = () => {
   );
 };
 
-export default Contact
+export default Contact;
