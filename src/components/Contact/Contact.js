@@ -6,9 +6,12 @@ const Contact = () => {
   return (
     <section id="contact" className="bg-black h-screen">
       <h1>Contact</h1>
-      <section>
-        <SocialIcon url="https://twitter.com/TomHegemanDev" />
-        <SocialIcon url="https://www.linkedin.com/in/thomas-hegeman-dev/" />
+      <section className="flex justify-center">
+        <SocialIcon url="https://twitter.com/TomHegemanDev" className="mr-4" />
+        <SocialIcon
+          url="https://www.linkedin.com/in/thomas-hegeman-dev/"
+          className="mr-4"
+        />
         {/* needs color change */}
         <SocialIcon url="https://github.com/Hegeman-Thomas001" />
       </section>

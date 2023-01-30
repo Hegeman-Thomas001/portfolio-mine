@@ -37,14 +37,16 @@ const Portfolio = () => {
     },
   ];
 
+  const projectsList = projects.map((project) => (
+    <Project key={project.id} project={project} />
+  ));
+
   return (
     <section
       id="portfolio"
-      className="flex justify-between flex-wrap bg-black lg:h-screen"
+      className="flex justify-between flex-wrap bg-black text-slate-200"
     >
-      {projects.map((project) => (
-        <Project key={project.id} project={project} />
-      ))}
+      {projectsList}
     </section>
   );
 };

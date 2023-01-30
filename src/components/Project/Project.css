@@ -15,11 +15,11 @@
 .project-site {
   border: 2px solid #aa2010;
   border-radius: 0.25rem;
-  color: azure;
   padding: 0.625rem 1.25rem;
 }
 
 .project-github:hover,
 .project-site:hover {
   background-image: linear-gradient(to bottom left, #c90101 0%, #000000 75%);
+  color: azure;
 }

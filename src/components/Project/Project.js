@@ -26,10 +26,10 @@ const Project = ({ project }) => {
         </section>
         <p>{description}</p>
         <section className="card-actions justify-end">
-          <a href={githubLink} className="btn project-github">
+          <a href={githubLink} className="btn project-github text-slate-300">
             Github
           </a>
-          <a href={liveSiteLink} className="btn project-site">
+          <a href={liveSiteLink} className="btn project-site text-slate-300">
             Visit Site
           </a>
         </section>
